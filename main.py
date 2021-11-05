@@ -57,7 +57,7 @@ async def roll(ctx, number_of_dice: int, number_of_sides: int):
 
 @bot.command(name='create-channel', help='Creates A New Channel For You')
 @commands.has_role('Bot Creator')
-async def create_channel(ctx, channel_name='real-python'):
+async def create_channel(ctx, channel_name='follow me on github :)'):
     guild = ctx.guild
     existing_channel = discord.utils.get(guild.channels, name=channel_name)
     if not existing_channel:
