@@ -12,7 +12,7 @@ bot = commands.Bot(command_prefix='!',status=discord.Status.idle)
 
 @bot.command(name='inspire', help='returns a random nice message')
 async def inspire(ctx):
-    nice_quotes = ["Stay Amazing <3","You Got This! :D ","Don't Give Up Yet! >:(","You've Got This! ^^","Your Amazing!! <3 ","Your The Best!! :pleading_face:"]
+    nice_quotes = ["Stay Amazing <3","You Got This! :D ","Don't Give Up Yet! >:(","You've Got This! ^^","Your Amazing!! <3 ","Your The Best!! :pleading_face:","Give yourself another day, another chance. You will find your courage eventually. Don’t give up on yourself just yet.", "We deal with disappointing and depressing experiences each day of our lives. Rest assured that these difficult times are your opportunity to grow and to learn more advanced strategies in order scale your next mountain more quickly."]
 
     response = random.choice(nice_quotes)
     await ctx.send(response)
@@ -68,7 +68,7 @@ async def create_channel(ctx, channel_name='follow me on github :)'):
 
 @bot.event
 async def on_ready():
-  await bot.change_presence(activity=discord.Streaming(name='Your Mother', url='https://twitch.tv/alekdevsyt1x')) 
+  await bot.change_presence(activity=discord.Streaming(name='By Alek#0001', url='https://twitch.tv/alekdevsyt1x')) 
   print("Bot is ready!")
 
 
